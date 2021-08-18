@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Face Detection</title>
+  <script src="libraries/jquery-3.4.1.min.js"></script>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="js/main.js"></script>
+
+  <!-- Custom files -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+   <div class="container-fluid">
+
+        <div class='title-introduction'>
+        <br>
+        <h2>Realtime Face Detection and Expression Classification</h2>
+        <p>This tool will access your device's webcam to capture a video feed. That video will be fed through a face recognition algorithm (in this case, <a href="https://justadudewhohacks.github.io/face-api.js/docs/index.html">face-api.js</a>) that attempts to detect any faces in the video. It provides a rating from 0 to 1 showing how sure the algorithm is that what it sees is a human face. In addition, it will attempt to classify the emotion on any face it finds.</p>
+
+        <p>All processing for this tool happens client-side, within your browser. This means that <strong>your video is not sent to or stored on our servers</strong>. We do not keep your image in any way.</p>
+
+        </div>
+
+      <div class="controls">
+        <p>Press
+          <button id="play-button">Run</button>
+           to <span class="startstop">start</span> capturing video. Press the button again to <span class="stopstart">stop</span>.
+        </p>
+
+      </div>
+      <div class='face-detection' id="video-holder">
+            <video id="video" width="360" height="280" muted></video>
+      </div>
+
+
+  </div>
+</body>
+</html>

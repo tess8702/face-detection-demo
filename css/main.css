@@ -1,0 +1,56 @@
+/* Main CSS file */
+
+body{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #fafafa;
+}
+
+
+h2 {
+  color:#024453;
+  font-weight: 800;
+}
+
+
+a {
+  font-weight: 700;
+  color: #1d83af;
+}
+
+.face-detection {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+canvas {
+      position: absolute;
+
+    }
+
+#play-button {
+     /* position: absolute;
+        top: 200px;
+        left: 50px;*/
+      background: #811c34;
+      padding-right: 26px;
+      border-radius: 3px;
+      border: none;
+      color: white;
+      margin: 0;
+      padding: 10px 10px;
+      width: 80px;
+      cursor: pointer;
+      height: 40px;
+      font-weight: 800;
+      font-size:14px;
+    }
+
+#play-button:hover {
+      background-color: #696969;
+    }
